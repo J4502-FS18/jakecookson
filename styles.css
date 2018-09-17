@@ -5,3 +5,7 @@ p{
 body{
   background-color:#ffffff;
 }
+img{
+  width:50%;
+  border:0;
+}
