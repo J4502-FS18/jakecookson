@@ -5,9 +5,6 @@ p{
     color:black;
 }
 
-img{
-    border:none 
-}
 #container{
 background-color:#ffffff;
 width: 95%;
@@ -19,6 +16,7 @@ img{
   width:25%;
   border:0;
 }
+
 nav li{
       list-style-type: none;
       text-align:center;
