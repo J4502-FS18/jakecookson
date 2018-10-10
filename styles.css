@@ -58,3 +58,18 @@ a{
   font-size:1.2em;
   border-top:3px solid #8ab0ff;
 }
+
+.container {
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+@media (min-width: 600px){
+  .container{
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:center;
+
+  }
+}
