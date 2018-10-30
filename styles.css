@@ -13,6 +13,10 @@ img{
   width:20%;
   border:0;
 }
+ol{
+  text-decoration: none;
+  list-style: none;
+}
 
 a{
   text-decoration: none;
@@ -28,13 +32,100 @@ nav li{
   border: 2px solid #ffffff;
   font-family: 'Anton', sans-serif;
 }
+/* THIS IS WHERE I STARTED ADDING GRID STUFF */
+
+.cards{
+margin: 0 20px;
+padding: 0;
+list-style: none;
+justify-content: center;
+display: grid;
+grid-gap:20px;
+gap:30px;
+background-color: #E09CE8;
+color: #8ab0ff;
+grid-template-areas:
+"e f"
+"a c"
+"b d";
+}
+
+.cards li{
+background-color: #8ab0ff;
+border: 1.5px solid #ffffff;
+padding: 5px;
+border-radius: 5px;
+max-width: 200px;
+}
+
+.cards img{
+  width: 100%;
+}
+
+.cardtext{
+  max-width:200px;
+  text-align:center;
+  justify-content:center;
+}
+
+.card1{
+  grid-area:a;
+}
+
+.card2{
+  grid-area: b;
+}
+.card3{
+  grid-area: c;
+}
+.card4{
+  grid-area:d;
+}
+.card5{
+  grid-area:e;
+}
+.card6{
+  grid-area: f;
+}
+
+@media screen and (min-width:600px){
+  .cards{
+    display:grid;
+    grid-template-areas:
+    "a c"
+    "e f"
+    "b d";
+  }
+}
+
+@media screen and (min-width: 750px){
+  .cards{
+    display:grid;
+    grid-template-areas:
+    "b d"
+    "a c"
+    "e f";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*THIS IS WHERE I STOPPED ADDING GRID STUFF */
 
 ol {
-list-style-type: none;
+list-style: none;
 font-family: 'Noto Serif KR', sans-serif;
 }
 nav ul {
   padding:0;
+  list-style: none;
 }
 
 nav a:link, nav a:visited{
@@ -71,5 +162,5 @@ justify-content:center;
     flex-wrap:wrap;
     align-content:center;
 
-  }
+}
 }
